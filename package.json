@@ -3,14 +3,16 @@
   "displayName": "Project Structure Generator",
   "publisher": "KeiSugiyama",
   "description": "Generate a .text file describing the file structure of the active project",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "engines": {
     "vscode": "^1.77.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:project-structure.generateStructure"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
