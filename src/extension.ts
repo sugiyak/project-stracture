@@ -4,7 +4,11 @@ import * as vscode from 'vscode';
 import * as fs from 'fs';
 import * as path from 'path';
 
-const ignoreFolders = ['.next', 'node_modules', '.vscode'];
+//import 
+const config = vscode.workspace.getConfiguration('project-structure');
+
+const ignoreFolders = config.get<string[]>('ignoreFolders') || ['.git', 'node_modules', '.vscode'];
+
 
 function generateFileStructure(
   directoryPath: string,

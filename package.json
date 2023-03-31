@@ -3,7 +3,7 @@
   "displayName": "Project Structure Generator",
   "publisher": "KeiSugiyama",
   "description": "Generate a .text file describing the file structure of the active project",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.77.0"
   },
@@ -20,7 +20,17 @@
         "command": "project-structure.generateStructure",
         "title": "Project_tree"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Project Structure Generator",
+      "properties": {
+        "project-structure.ignoreFolders": {
+          "type": "array",
+          "default": [".git", "node_modules", ".vscode", ".next"],
+          "description": "List of folders to ignore when generating the project structure."
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
