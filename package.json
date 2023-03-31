@@ -46,5 +46,10 @@
     "webpack": "^5.76.3",
     "webpack-cli": "^5.0.1",
     "@vscode/test-electron": "^2.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sugiyak/project-stracture"
+  },
+  "license": "MIT"
 }
