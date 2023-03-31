@@ -2,7 +2,7 @@
 
 The Project Structure Generator is a Visual Studio Code extension that generates a `.text` file describing the file structure of the active project.
 
-It ignores folders such as `.next`, '.git' and `node_modules`, ".vscode" by default. but you can customize the ignoreFolders list through the VS Code settings UI or directly in their settings.json file.
+It ignores folders such as ".next", ".git" and "node_modules", ".vscode" by default. but you can customize the ignoreFolders list through the VS Code settings UI or directly in their settings.json file.
 
 To add or modify the list of folders you want to ignore, find "Project Structure Generator" on installed extension list and click on setting gear icon -> "Extension Settings". Click on "Edit in settings.json" and add folders to "project-structure.ignoreFolders". You can use the following format:
 
@@ -12,8 +12,6 @@ To add or modify the list of folders you want to ignore, find "Project Structure
     ".vscode",
     ...ADDITIONAL FOLDERS
     ]
-
-
 
 ## Features
 
